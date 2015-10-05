@@ -17,6 +17,7 @@ namespace HotelConsoleAPP
         public virtual DbSet<Guest> Guest { get; set; }
         public virtual DbSet<Hotel> Hotel { get; set; }
         public virtual DbSet<Room> Room { get; set; }
+        public virtual DbSet<MemberShipType> MemberShipType { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

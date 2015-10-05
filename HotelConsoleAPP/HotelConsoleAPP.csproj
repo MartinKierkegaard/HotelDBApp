@@ -57,8 +57,27 @@
     <Compile Include="Booking.cs" />
     <Compile Include="BTest.cs" />
     <Compile Include="Guest.cs" />
+    <Compile Include="GuestRating.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="HotelContext.cs" />
+    <Compile Include="MemberShipType.cs" />
+    <Compile Include="Migrations\201510051438043_InitialCreate.cs" />
+    <Compile Include="Migrations\201510051438043_InitialCreate.Designer.cs">
+      <DependentUpon>201510051438043_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510051439194_AddRating.cs" />
+    <Compile Include="Migrations\201510051439194_AddRating.Designer.cs">
+      <DependentUpon>201510051439194_AddRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510051602405_EnumGuestRating.cs" />
+    <Compile Include="Migrations\201510051602405_EnumGuestRating.Designer.cs">
+      <DependentUpon>201510051602405_EnumGuestRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510051840387_membershiptype.cs" />
+    <Compile Include="Migrations\201510051840387_membershiptype.Designer.cs">
+      <DependentUpon>201510051840387_membershiptype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
@@ -67,10 +86,24 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Content Include="SQL\Find which bonus.sql" />
     <Content Include="SQL\HotelTableAlter.sql" />
     <Content Include="SQL\Hotel_DDL.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510051438043_InitialCreate.resx">
+      <DependentUpon>201510051438043_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510051439194_AddRating.resx">
+      <DependentUpon>201510051439194_AddRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510051602405_EnumGuestRating.resx">
+      <DependentUpon>201510051602405_EnumGuestRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510051840387_membershiptype.resx">
+      <DependentUpon>201510051840387_membershiptype.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

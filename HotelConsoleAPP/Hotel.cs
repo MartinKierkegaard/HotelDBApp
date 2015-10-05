@@ -33,6 +33,12 @@ namespace HotelConsoleAPP
         [StringLength(50)]
         public string HotelUrl { get; set; }
 
+        /// <summary>
+        /// The rating of the hotel
+        /// </summary>
+        [StringLength(5)]
+        public string Rating { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Room> Room { get; set; }
     }
